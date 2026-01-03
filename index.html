@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shree Kirana Store</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+    }
+    header{
+      background:#2c3e50;
+      color:white;
+      padding:25px;
+      text-align:center;
+    }
+    nav{
+      background:#16a085;
+      padding:12px;
+      text-align:center;
+    }
+    nav a{
+      color:white;
+      margin:0 15px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    nav a:hover{
+      text-decoration:underline;
+    }
+    section{
+      background:white;
+      margin:20px;
+      padding:25px;
+      border-radius:8px;
+      box-shadow:0 0 8px rgba(0,0,0,0.1);
+    }
+    .products{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+    .card{
+      background:#ecf0f1;
+      padding:20px;
+      border-radius:8px;
+      width:250px;
+      text-align:center;
+    }
+    footer{
+      background:#2c3e50;
+      color:white;
+      text-align:center;
+      padding:15px;
+    }
+    button{
+      background:#16a085;
+      color:white;
+      border:none;
+      padding:10px 20px;
+      border-radius:5px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+    button:hover{
+      background:#138d75;
+    }
+    input, textarea{
+      width:100%;
+      padding:10px;
+      margin:8px 0;
+      border-radius:5px;
+      border:1px solid #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Shree Kirana Store</h1>
+  <p>Daily Use Groceries at Best Price</p>
+  <button>Order on WhatsApp</button>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#products">Products</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="home">
+  <h2>Welcome</h2>
+  <p>Welcome to Shree Kirana Store. We provide fresh groceries and household items at affordable prices.</p>
+</section>
+
+<section id="about">
+  <h2>About Us</h2>
+  <p>Shree Kirana Store is a trusted local grocery shop serving quality products with home delivery.</p>
+</section>
+
+<section id="products">
+  <h2>Our Products</h2>
+  <div class="products">
+    <div class="card">
+      <h3>Rice, Wheat & Dal</h3>
+      <p>All types of grains available.</p>
+    </div>
+    <div class="card">
+      <h3>Oil, Sugar & Spices</h3>
+      <p>Fresh and branded items.</p>
+    </div>
+    <div class="card">
+      <h3>Biscuits & Snacks</h3>
+      <p>Popular brands available.</p>
+    </div>
+    <div class="card">
+      <h3>Soap & Household</h3>
+      <p>Daily cleaning products.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 Phone: +91 7903727275</p>
+  <p>📧 Email: shreekirana@gmail.com</p>
+  <p>📍 Address: Barsoi Bazar</p>
+
+  <h3>Send Message</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Shree Kirana Store | All Rights Reserved</p>
+</footer>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/919876543210"
+   target="_blank"
+   style="position:fixed;bottom:20px;right:20px;
+   background:#25D366;color:white;
+   padding:15px 22px;border-radius:50px;
+   text-decoration:none;font-weight:bold;
+   box-shadow:0 0 10px rgba(0,0,0,0.3);">
+   WhatsApp
+</a>
+
+</body>
+</html>
