@@ -128,33 +128,30 @@
 <section id="contact">
   <h2>Contact Us</h2>
   <p>📞 Phone: +91 7903727275</p>
-  <p>📧 Email: shreekirana@gmail.com</p>
   <p>📍 Address: Barsoi Bazar</p>
 
-  <h3>Send Message</h3>
-  <form>
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
+  <h3>Send Message on WhatsApp</h3>
+
+  <input type="text" id="name" placeholder="Your Name" required>
+  <textarea id="message" placeholder="Your Message" required></textarea>
+
+  <button onclick="sendWhatsApp()">Send Message</button>
 </section>
 
-<footer>
-  <p>© 2025 Shree Kirana Store | All Rights Reserved</p>
-</footer>
+<script>
+function sendWhatsApp() {
+  var name = document.getElementById("name").value;
+  var message = document.getElementById("message").value;
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/7903727275"
-   target="_blank"
-   style="position:fixed;bottom:20px;right:20px;
-   background:#25D366;color:white;
-   padding:15px 22px;border-radius:50px;
-   text-decoration:none;font-weight:bold;
-   box-shadow:0 0 10px rgba(0,0,0,0.3);">
-   WhatsApp
-</a>
+  var whatsappNumber = "7903727275"; 
+  var text = "Name: " + name + "%0A" + "Message: " + message;
+
+  var url = "https://wa.me/" + whatsappNumber + "?text=" + text;
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
+
 
